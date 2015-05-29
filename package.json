@@ -1,0 +1,38 @@
+{
+  "name": "dxrxt",
+  "version": "0.0.1",
+  "description": "single page site for dxrxt",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/additiveinverse/dxrxt.git"
+  },
+  "homepage": "//dxrxt.com",
+  "keywords": [
+    "jade",
+    "express",
+    "markdown",
+    "angular",
+    "less",
+    "other",
+    "stuff"
+  ],
+  "author": "Richard Bailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/additiveinverse/dxrxt/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-build-control": "^0.5.0",
+    "grunt-bump": "^0.3.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-htmlmin": "^0.1.4",
+    "grunt-tinyimg": "0.0.5",
+    "matchdep": "^0.3.0"
+  }
+}

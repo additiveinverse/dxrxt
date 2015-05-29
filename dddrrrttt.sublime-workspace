@@ -1,0 +1,1193 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"base-margin",
+				"base-margin-eighth"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block-defaults"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"grid",
+				"grid-offset-calculation"
+			],
+			[
+				"gutter",
+				"grid-gutter-calculation"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"f",
+				"font-style"
+			],
+			[
+				"ine",
+				"_inject"
+			],
+			[
+				"tex-",
+				"text-align"
+			],
+			[
+				"inlin",
+				"inline-def"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"fade",
+				" fadeout(color, 10%)"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"arrow",
+				"arrow-width"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font-",
+				"font-face"
+			],
+			[
+				"base-m",
+				"base-margin"
+			],
+			[
+				"html",
+				"htmlmin"
+			],
+			[
+				"bower",
+				"bower"
+			],
+			[
+				"base-mar",
+				"base-margin-half"
+			],
+			[
+				"base-type",
+				"base-type-size"
+			],
+			[
+				"trac",
+				"trackK"
+			],
+			[
+				"reco",
+				"recordName"
+			],
+			[
+				"elem",
+				"elemActive"
+			],
+			[
+				"ele",
+				"elemActive"
+			],
+			[
+				"hdr",
+				"hdrActive"
+			],
+			[
+				"acti",
+				"activator"
+			],
+			[
+				"head",
+				"headingclass"
+			],
+			[
+				"parent",
+				"parentNode"
+			],
+			[
+				"target",
+				"targetclass"
+			],
+			[
+				"T",
+				"targetclass"
+			],
+			[
+				"ta",
+				"targetclass"
+			],
+			[
+				"heading",
+				"headingclass"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"pare",
+				"parentClass"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"app",
+				"appSRC"
+			],
+			[
+				"art",
+				"articles"
+			],
+			[
+				"articl",
+				"articlesGroup"
+			],
+			[
+				"re",
+				"recordGroup"
+			],
+			[
+				"article",
+				"articles"
+			],
+			[
+				"rec",
+				"recordTitle"
+			],
+			[
+				"articles",
+				"articles"
+			],
+			[
+				"ar",
+				"archiveYear"
+			],
+			[
+				"record",
+				"recordList"
+			],
+			[
+				"recor",
+				"recordList"
+			],
+			[
+				"artic",
+				"artic"
+			],
+			[
+				"Articl",
+				"articleTags"
+			],
+			[
+				"meta",
+				"metadata"
+			],
+			[
+				"line-he",
+				"line-height-offset"
+			],
+			[
+				"base-line",
+				"base-line-height"
+			],
+			[
+				"base",
+				"base-line-height"
+			],
+			[
+				"base-type-",
+				"base-type-h1"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"image",
+				"imagepath"
+			],
+			[
+				"tag",
+				"tagName"
+			],
+			[
+				"page",
+				"page-nav-post"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"post",
+				"postclass"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"proem",
+				"proemland"
+			],
+			[
+				"nav",
+				"navName"
+			],
+			[
+				"F",
+				"Fnames"
+			],
+			[
+				"w",
+				"winterPath"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"musi",
+				"music-photo"
+			],
+			[
+				"music",
+				"music-grid-active"
+			],
+			[
+				"prod",
+				"prod-grid-active"
+			],
+			[
+				"pth",
+				"pathJS"
+			],
+			[
+				"path",
+				"pathJS"
+			],
+			[
+				"tr",
+				"transform-origin"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"displa",
+				"display-inbl"
+			],
+			[
+				"pas",
+				"pathCSS"
+			],
+			[
+				"pat",
+				"pathLESS"
+			],
+			[
+				"c",
+				"cache"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"dat",
+				"dataQuery"
+			],
+			[
+				"pa",
+				"pathJS"
+			],
+			[
+				"file",
+				"filelist"
+			],
+			[
+				"route",
+				"route	\\$route"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"loca",
+				"location	\\$location"
+			],
+			[
+				"data",
+				"dataComm"
+			],
+			[
+				"single",
+				"SingleCtrl"
+			],
+			[
+				"gr",
+				"GridCtrl"
+			],
+			[
+				"load",
+				"loadr"
+			],
+			[
+				"itm-",
+				"itm-social"
+			],
+			[
+				"togg",
+				"toggle"
+			],
+			[
+				"class",
+				"classy"
+			],
+			[
+				"default",
+				"defaultGridTemplate"
+			],
+			[
+				"el",
+				"elemClas"
+			],
+			[
+				"js",
+				"js_url"
+			],
+			[
+				"web",
+				"WEBROOT_DIR"
+			],
+			[
+				"APP",
+				"APP_DIR"
+			],
+			[
+				"the",
+				"theData"
+			],
+			[
+				"pr",
+				"primaryKeys"
+			],
+			[
+				"proj",
+				"projectListCtlr"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"entity",
+				"entity_type"
+			],
+			[
+				"btn-",
+				"btn-grid"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"fin",
+				"finalString"
+			],
+			[
+				"TXT",
+				"TXTactive"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"active",
+				"activeClass"
+			],
+			[
+				"webkit-",
+				"webkit-box-flex"
+			],
+			[
+				"gstc",
+				"gst-cspot"
+			],
+			[
+				"note",
+				"noteMessage"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Username",
+				"username"
+			],
+			[
+				"aut",
+				"authConf"
+			],
+			[
+				"auth",
+				"Auth"
+			],
+			[
+				"overlay",
+				"overlay-active"
+			],
+			[
+				"pref",
+				"prefList"
+			],
+			[
+				"at",
+				"attribute"
+			],
+			[
+				"submi",
+				"frmSubmit"
+			],
+			[
+				"Toggle",
+				"toggleClass"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 321.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"Package Control: isnt",
+				"Package Control: Install Package"
+			],
+			[
+				"les",
+				"Set Syntax: LESS"
+			],
+			[
+				"view",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"",
+				"Bower: Install"
+			],
+			[
+				":$",
+				":$ - EOF"
+			],
+			[
+				"build",
+				"Build: Minify"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"tort",
+				"Preferences: Tortoise Key Bindings – Default"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: D",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: Enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 400.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/UwAmp/www/dxrxt",
+		"/C/UwAmp/www/dxrxt/app",
+		"/C/UwAmp/www/dxrxt/app/markdown",
+		"/C/UwAmp/www/dxrxt/node_modules"
+	],
+	"file_history":
+	[
+		"/C/UwAmp/www/dxrxt/package.json",
+		"/C/UwAmp/www/dxrxt/Gruntfile.js",
+		"/C/UwAmp/www/dxrxt/app/index.jade",
+		"/C/UwAmp/www/dxrxt/app/markdown/home.md",
+		"/C/UwAmp/www/dxrxt/bower.json",
+		"/C/UwAmp/www/dxrxt/.gitignore",
+		"/C/UwAmp/www/dxrxt/index.html",
+		"/C/UwAmp/www/resume/package.json",
+		"/C/UwAmp/www/placeguntohead/app/less/global.less",
+		"/C/Users/baileyr/AppData/Roaming/Rainmeter/Rainmeter.ini",
+		"/C/UwAmp/www/placeguntohead/app/less/media.less",
+		"/C/UwAmp/www/placeguntohead/app/less/_variables.less",
+		"/C/UwAmp/www/placeguntohead/app/less/_grid.less",
+		"/C/UwAmp/www/placeguntohead/config-prod.json",
+		"/C/UwAmp/www/placeguntohead/contents/css/global.css",
+		"/C/UwAmp/www/placeguntohead/app/less/_mixins.less",
+		"/C/UwAmp/www/placeguntohead/templates/_author.jade",
+		"/C/UwAmp/www/placeguntohead/templates/_nav.jade",
+		"/C/UwAmp/www/placeguntohead/templates/index.jade",
+		"/C/UwAmp/www/placeguntohead/build/css/layout.min.css",
+		"/C/UwAmp/www/placeguntohead/build/index.html",
+		"/C/UwAmp/www/placeguntohead/Gruntfile.js",
+		"/C/UwAmp/www/placeguntohead/build/articles/negativ/negativ-reinforcements.html",
+		"/C/UwAmp/www/placeguntohead/app/less/base-type.less",
+		"/C/UwAmp/www/placeguntohead/app/less/_typicons.less",
+		"/C/UwAmp/www/placeguntohead/templates/article.jade",
+		"/C/UwAmp/www/placeguntohead/templates/layout.jade",
+		"/C/UwAmp/www/placeguntohead/app/less/lesshat.less",
+		"/C/UwAmp/www/placeguntohead/app/js/pgth.js",
+		"/C/Users/baileyr/Desktop/projects/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/css/less/_sprite.less",
+		"/C/Users/baileyr/Desktop/projects/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/LESS.template.mustache",
+		"/C/Users/baileyr/Desktop/projects/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/css/less/ws-template.less",
+		"/C/Users/baileyr/Desktop/projects/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/Gruntfile.js",
+		"/C/Users/baileyr/Desktop/projects/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/package.json",
+		"/C/UwAmp/www/placeguntohead/build/articles/among-others/slow-nods-and-slippers.html",
+		"/C/UwAmp/www/lesshat/mixins/box-sizing/box-sizing.js",
+		"/C/UwAmp/www/lesshat/mixins/box-sizing/test.js",
+		"/C/UwAmp/www/lesshat/mixins/align-content/align-content.js",
+		"/C/UwAmp/www/lesshat/Gruntfile.js",
+		"/C/UwAmp/www/lesshat/mixins/filter/filter.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/test.md",
+		"/C/UwAmp/www/placeguntohead/app/less/_utilities.less",
+		"/C/UwAmp/www/placeguntohead/app_modules/typicons/src/font/typicons.css",
+		"/C/UwAmp/www/placeguntohead/bower.json",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-phat-shield.md",
+		"/C/Users/baileyr/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/baileyr/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/baileyr/AppData/Local/Temp/Temp1_socicon.zip/socicon/socicon.css",
+		"/C/Users/baileyr/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-slow-nods-and-slippers.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-eat-knife.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-001.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-your-grand-father-is-dead.md",
+		"/C/Users/baileyr/Desktop/Dropbox/Mindmaps/proemography.markdown",
+		"/C/UwAmp/www/placeguntohead/app/less/base-fonts.less",
+		"/C/UwAmp/www/placeguntohead/contents/articles/02-pretty-song-for-alyssa.md",
+		"/C/Users/baileyr/Desktop/Dropbox/Apps/Mindmaps/proemography.markdown",
+		"/C/Users/baileyr/Desktop/foundation-5.5.1/css/foundation.css",
+		"/C/UwAmp/www/placeguntohead/.git/config",
+		"/C/UwAmp/www/grey-goose/.git/config",
+		"/C/UwAmp/www/greenvalley/.git/config",
+		"/C/UwAmp/www/placeguntohead/placeguntohead.sublime-project",
+		"/C/UwAmp/www/placeguntohead/.gitignore",
+		"/C/UwAmp/www/placeguntohead/contents/authors/proem.json",
+		"/C/UwAmp/www/placeguntohead/sftpCache.json",
+		"/C/UwAmp/www/placeguntohead/.ftppass",
+		"/C/UwAmp/www/placeguntohead/package.json",
+		"/C/UwAmp/www/placeguntohead/config.json",
+		"/C/UwAmp/www/placeguntohead/templates/archive.jade",
+		"/C/Users/baileyr/Desktop/v11_launch/pet/gsi_pet_na_sf/trunk/staticfiles/cartridge/static/default/ws-store-closed-error.html",
+		"/C/UwAmp/www/placeguntohead/contents/articles/02-skylup.md",
+		"/C/UwAmp/www/placeguntohead/readme.md",
+		"/C/Users/baileyr/Desktop/FileZilla.xml",
+		"/C/UwAmp/www/placeguntohead/contents/tags/tags.json",
+		"/C/UwAmp/www/placeguntohead/contents/articles/01-skylup.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/01-burnplate/skylup.md",
+		"/C/UwAmp/www/placeguntohead/templates/article-index.jade",
+		"/C/UwAmp/www/placeguntohead/contents/archive.json",
+		"/C/UwAmp/www/placeguntohead/contents/feed.json",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-among-others/your-grand-father-is-dead.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/01-burnplate/index.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/02-negativ/index.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/03-among-others/index.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/01-burnplate/index",
+		"/C/UwAmp/www/placeguntohead/contents/js/pgth.js",
+		"/C/UwAmp/www/resume/.git/config",
+		"/C/UwAmp/www/placeguntohead/contents/articles/your-grand-father-is-dead.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/001.md",
+		"/C/Users/baileyr/AppData/Roaming/Sublime Text 3/Packages/User/pgthmarkdown.sublime-snippet",
+		"/C/UwAmp/www/placeguntohead/contents/articles/pears-in-evening-warez.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/3rd-shift.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/access-mike.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/ashes.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/below-me-reds.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/bolt-action-ardvark.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/burnplate.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/cold-water-flat.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/droolmaster.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/gum-and-eggs.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/long-distance-tiara.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/negativ-reinforcements.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/old-school-pudding.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/peas-in-olive-juice.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/pretty-song-for-alyssa.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/protobella.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/red-blocks.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/running-with-scissors.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/skylup.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/take-your-pants-off.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/tether.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/wet-groceries.md",
+		"/C/UwAmp/www/placeguntohead/contents/articles/whipworm.md",
+		"/C/UwAmp/www/placeguntohead/node_modules/wintersmith-tag/src/index.coffee",
+		"/C/Users/baileyr/.ssh/id_rsa.pub",
+		"/C/UwAmp/www/placeguntohead/app/less/bas-typ.16-24.css",
+		"/C/UwAmp/www/placeguntohead/contents/css/layout.min.css",
+		"/C/UwAmp/www/csspill/less/base-type.less",
+		"/C/UwAmp/www/csspill/less/global.less",
+		"/C/Users/baileyr/Desktop/Dropbox/Mindmaps/gruntjs oresentation.markdown",
+		"/C/UwAmp/www/txp/_lib/src/app/less/base-type.less",
+		"/C/UwAmp/www/csspill/legacy/bas-typ.16-24.css",
+		"/C/UwAmp/www/csspill/legacy/bas-typ.14-20.css",
+		"/C/UwAmp/www/placeguntohead/app_modules/jq/MIT-LICENSE.txt",
+		"/C/UwAmp/www/placeguntohead/node_modules/grunt-contrib-imagemin/tasks/imagemin.js",
+		"/C/UwAmp/www/placeguntohead/templates/author-card.jade",
+		"/C/UwAmp/www/placeguntohead/plugins/paginator.coffee",
+		"/C/UwAmp/www/placeguntohead/contents/articles/new.md",
+		"/C/UwAmp/www/placeguntohead/templates/_tags.jade"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 111.0,
+		"where_history":
+		[
+			"C:\\UwAmp\\www\\placeguntohead\\contents",
+			"<open folders>",
+			"C:\\UwAmp\\www\\HS-cake\\app\\View\\Errors",
+			"C:\\UwAmp\\www\\cake\\scc\\Controller",
+			"C:\\UwAmp\\www\\HS-cake\\app\\View\\Errors",
+			"C:\\Users\\baileyr\\Desktop\\Generico\\cartridges\\gsi_gst_na_us_sf\\trunk\\staticfiles\\cartridge\\static\\default\\css",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@offset: 1",
+			"@total-width*(((@gutter-width+@column-width)*@offset)",
+			"@total-width*((@gutter-width*.5)/@gridsystem-width)",
+			"@total-width * ((@gutter-width * .5) / @gridsystem-width)",
+			"@total-width * ((@gutter-width*.5)/@gridsystem-width)",
+			"navlist",
+			"eigth",
+			"transparent",
+			"index",
+			"size",
+			"white",
+			"-hdr",
+			"hdr-ttl",
+			"  content: ",
+			"/* '' */\n}",
+			"/* '' */\n} ",
+			":before {",
+			".typcn-",
+			"left, 15px, ",
+			"calc",
+			"rotate",
+			" i ",
+			"i",
+			"gradient",
+			".transform-origin(",
+			".transform(",
+			"winterPath",
+			"pathJS",
+			"bowerPath",
+			"i",
+			"year",
+			"month",
+			"archiveYear",
+			"archive",
+			"release",
+			"months",
+			"yearsK",
+			"tags:",
+			"i",
+			"helper",
+			"5",
+			"2",
+			" @",
+			"/@",
+			"calc",
+			"navtop",
+			"Negativ",
+			"postclass",
+			"01",
+			"tag",
+			")\n",
+			"body",
+			"include nav",
+			"Groceries",
+			"darker",
+			"nfo",
+			"lst",
+			"index",
+			"locals.name",
+			"\"",
+			"locals.name",
+			"\"",
+			"name",
+			"add",
+			"http://localhost/txp",
+			"Wintersmith",
+			"@base-pad-horizontal",
+			"@base-pad-vertical",
+			"integral",
+			"half",
+			"engra",
+			"half",
+			"please ",
+			"please don't",
+			"please don't tell me thats your remix",
+			"breaks your",
+			"hybrid",
+			"infiltrate 5.0",
+			"mafia rip bin",
+			"md8",
+			"darker still",
+			"darkerstill",
+			"redevelopment",
+			"\"content\": \"\"",
+			"\"Body\": \"\"",
+			"\"Body\": ",
+			"([0-9]+\\. )",
+			"#",
+			"keef baker",
+			"md2",
+			"live-sets",
+			"live",
+			"mix",
+			"nuero",
+			"nuer",
+			"socially",
+			"neuro",
+			"among",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"\"Body\": \"Proem, otherwise known as Richard Bailey, is a 34 year old web designer living in Houston, Texas. He has been releasing music since 1999 on labels like merck, n5MD, and Hydrant. He started experimenting with electronic devices at the age of 19, using three thrift store turntables, some tape decks, a few garage sale Casio SK-5s, and some circuit bent bargain bin keyboards. He has released albums, EPs and remixes on labels across the electronic scene....\",",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"http://localhost/txp/",
+			"social",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"songs",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"conven",
+			"conv",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"livemd",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"soci",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"among",
+			"\"Body\":\\s\"([^\"]*)\",",
+			"\"Body\":\\s\"(.*?)\" ",
+			"\"Body\": \"(.*?)\" ",
+			"\"Body\": \"(.*?)\", ",
+			"(?:\"Body\":) \"(.*?)\" ",
+			"(?:\"Body\":)  ",
+			"(?:\"Body\":)\\s ",
+			"(?:\"Body\":) ",
+			"(?:\"Body\": ) ",
+			"(?:\"Body\":)",
+			"\"Body[\"^//]:\\s(?:[\"^//].*)\",",
+			"[\"Body\": ]*(\"*#+[A-Z-a-z-0-9 ()]*)",
+			"(#+[A-Z-a-z-0-9 ()]*)",
+			"(?:\"[a-z]+\":\\s\")(#+[A-Z-a-z-0-9 ()]*)"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"record:",
+			"info",
+			"list",
+			"i",
+			"locals.title",
+			"'",
+			"locals.na",
+			"'",
+			"",
+			"@base-margin-half",
+			"@base-margin",
+			"\"Body\": \"\"",
+			"\"Body\": [\"",
+			"\"Body\": [",
+			"\"",
+			"@line-height-calc",
+			"@orange",
+			"@import '_variables';",
+			"class=\"val prod-nfo-val\"",
+			"<dt class=\"type prod-nfo-typ\">",
+			"@",
+			"$",
+			"role",
+			"}",
+			"#",
+			" ",
+			"",
+			"<dt class=\"val\">",
+			"<dt class=\"nfo\">",
+			"$type",
+			"type",
+			"$type",
+			"<h6 class=\"ttl\">",
+			"<h5 class=\"ttl\">",
+			"<h4 class=\"ttl\">",
+			"<h3 class=\"ttl\">",
+			"<h2 class=\"ttl\">",
+			"<h1 class=\"ttl\">",
+			"<label class=\"lbl\">",
+			"<li class=\"lst\">",
+			"<h2 class=\"ttl\">",
+			"<h1 class=\"ttl\">",
+			"url('../ff/",
+			".btn-group",
+			"<div class=\"fault err-stack\">",
+			"lst-slices",
+			"/ff/n",
+			"url('_lib/ff",
+			"",
+			".fld-",
+			".gd-suffix-",
+			".gd-prefix-",
+			".gd-pull-",
+			".gd-push-",
+			".gd-suffix-",
+			".gd-prefix-",
+			"}",
+			"",
+			".gd-grid-",
+			".gd-grid-.grid_\n<dl class=\"def error\">",
+			".gd-grid-\n<dl class=\"def error\">",
+			" \n<dl class=\"def error\">",
+			"\n<dl class=\"def error\">",
+			"<div class=\"err\">\n<dl class=\"def error\">",
+			"<div class=\"err\">\n<dt class=\"itm notice err-notice\">",
+			"<div class=\"err\">\n</dt>",
+			"<div class=\"err\">\n<h2 class=\"ttl ttl-err\">",
+			"</dt>",
+			"<dt class=\"itm notice\">",
+			"<dl class=\"def error\">",
+			"-current",
+			" .ws-step-number",
+			"<a class=\"ws-step-name ws-link\"",
+			"<span class=\"ws-step-name ws-link-inactive",
+			"",
+			".gst-footer",
+			"",
+			"<label class=\"ws-label\"",
+			".gst-utility",
+			".gd-suffix-",
+			".gd-prefix-",
+			"}",
+			"",
+			"gd-pull-",
+			".gd-push-",
+			".gd-grid-",
+			"</span>",
+			"<span>",
+			"",
+			"../fonts",
+			"",
+			"ff/",
+			"'span.count-files'",
+			"obx."
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 138.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dddrrrttt.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"grunt",
+				"placeguntohead\\Gruntfile.js"
+			],
+			[
+				"mix",
+				"app\\less\\_mixins.less"
+			],
+			[
+				"vari",
+				"node_modules\\grunt-contrib-less\\test\\fixtures\\include\\variables.less"
+			],
+			[
+				"prm.d",
+				"_lib\\js\\prm.directives.js"
+			],
+			[
+				"base-f",
+				"_lib\\src\\less\\base-frm-err.less"
+			],
+			[
+				"glo",
+				"_lib\\src\\less\\global.less"
+			],
+			[
+				"",
+				"_lib\\Gruntfile.js"
+			],
+			[
+				"packa",
+				"_lib\\package.json"
+			],
+			[
+				"variable",
+				"_lib\\static\\bootstrap-variables\\src\\variables.less"
+			],
+			[
+				"itm",
+				"_lib\\partials\\itm-prdgrid.html"
+			],
+			[
+				"con",
+				"_lib\\js\\controllers.js"
+			],
+			[
+				"_mi",
+				"_lib\\css\\less\\_mixins.less"
+			],
+			[
+				"direc",
+				"_lib\\js\\directives.js"
+			],
+			[
+				"js/",
+				"_lib\\js\\controllers.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 637.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\UwAmp\\www\\resume\\resume.sublime-project"
+			],
+			[
+				"est",
+				"/C/Users/baileyr/Desktop/Dropbox/WS tool kit - WS documentation/estimation tool/gsiest.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 624.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

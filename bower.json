@@ -1,0 +1,28 @@
+{
+  "name": "dxrxt",
+  "version": "0.0.1",
+  "homepage": "https://github.com/additiveinverse/dxrxt",
+  "authors": [
+    "additiveinverse <additiveinverse@gmail.com>"
+  ],
+  "description": "single page site for dxrxt",
+  "main": "index.html",
+  "keywords": [
+    "less",
+    "jquery",
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-less": "*",
+    "lesshat": "~3.0.2"
+  }
+}
