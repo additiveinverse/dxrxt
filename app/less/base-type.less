@@ -1,0 +1,162 @@
+@import './_variables';
+@import './_mixins';
+@import './lesshat';
+
+* {
+	.box-sizing;
+}
+
+html,
+body {
+	font-family: @base-type;
+	color: @base-type-color;
+	height: 100%;
+	margin: 0;
+	.font-size(@base-type-size);
+}
+
+// Links
+a {
+	text-decoration: none;
+	color: @base-link;
+
+	&:hover {
+		color: @base-link-hover;
+	}
+
+	&:focus { outline: none }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @base-type-heading-color;
+	margin-bottom: 0;
+	margin-top: 0;
+	position: relative;
+	font-weight: normal;
+}
+
+
+h1 {
+	.font-size( @base-type-h1, 3 );
+	// top: @base-line-height / unit( @base-type-h1, em);
+}
+
+h2 {
+	.font-size( @base-type-h2, 2 );
+	margin-bottom: @base-line-multiplier / @base-type-h2 * 1em;
+	top: 5px;
+}
+
+h3 {
+	.font-size( @base-type-h3, 1.25 );
+	// line-height: ( @base-line-height * 1 ) / @base-type-h3;
+	top: 7px;
+}
+
+h4 {
+	.font-size( @base-type-h4, 1 );
+  margin-bottom: 0.5em;
+  top: @base-line-height * @base-type-h4 + 1px;
+}
+
+h5 {
+	.font-size( @base-type-h5, 1 );
+    // line-height: @base-line-height + 0.7536;
+    // top: -2px;
+}
+
+h6 {
+	.font-size( @base-type-h6, 1 );
+    // line-height: @base-line-height + 1.0668;
+    // top: -2px;
+}
+
+blockquote { margin: @base-margin }
+
+p,
+th,
+td {
+	.font-size( @base-type-size );
+}
+
+p { margin-top: 0 }
+
+ul,
+ol,
+dl {
+	margin-top: @base-margin;
+}
+
+ul li {
+	list-style: none;
+}
+
+table {
+	margin-bottom: @base-margin-half;
+}
+
+ul,
+ol,
+p {
+	margin-bottom: @base-margin;
+}
+
+body,
+th,
+p,
+dt,
+dd,
+li,
+td {
+	line-height: @base-line-height
+}
+
+th { text-align: left }
+
+td {
+	padding-bottom: 0
+}
+
+caption,
+dt {
+	// font-weight: bold
+}
+
+ol { list-style: decimal }
+ul { list-style: disc }
+
+dt {
+	&:after,
+	&::after {
+		._inject( ":" );
+	}
+}
+
+dd { margin-left: 0 }
+
+sup { bottom: @base-margin-half }
+sub { bottom: -@base-margin-half }
+
+small,
+sup,
+sub {
+	.font-size( @base-type-sm, 0.5 )
+}
+
+img,
+object,
+embed,
+video,
+audio {
+	max-width: 100%;
+}
+
+img { height: auto }
+
+fieldset { border: none }

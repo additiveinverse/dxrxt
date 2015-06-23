@@ -1,0 +1,86 @@
+/////////////////
+// Semantic.gs // for LESS: http://lesscss.org/
+/////////////////
+
+// Defaults which you can freely override
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+
+// Utility variable — you should never need to modify this
+@gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px;
+
+// Set @total-width to 100% for a fluid layout
+@total-width: 100%;
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter-width: @gutter-width) {
+  margin-left:  (@gutter-width / -2) * 0.1%;
+  margin-right: (@gutter-width / -2) * 0.1%;
+}
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+// ////////// GRID //
+.row( @columns: @columns, @total-width: @total-width ) {
+	@gutters: @total-width * ((@gutter-width * .5) / @gridsystem-width) * 2;
+	width: @total-width * ((@gutter-width + @gridsystem-width) / @gridsystem-width) - @gutters;
+	margin: 0 auto;
+	// .clearfix;
+}
+
+.inline-block-defaults() {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.grid-margin(@columns: @columns, @margin-top: auto ) {
+	margin+: @margin-top @total-width * ((@gutter-width * .5) / @gridsystem-width) @margin-top;
+}
+
+// just the width ma'am
+.col( @x, @columns: @columns ) {
+	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+}
+
+.column( @x, @columns: @columns, @margin-top: auto) {
+	.inline-block-defaults;
+	.col(@x, @columns);
+	.grid-margin(@columns, @margin-top);
+}
+
+.push( @offset: 1 ) {
+	left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.pull( @offset: 1 ) {
+	left: -@total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.prefix( @offset: 1 ) {
+	padding-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.suffix( @offset: 1 ) {
+	padding-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.grid-loop (@i) when (@i > 0) {
+	.g@{i} {
+		.column(@i);
+	}
+	.grid-loop(@i - 1);
+}
+// .grid-loop(@columns);

@@ -10,9 +10,9 @@ module.exports = function(grunt) {
 			root: 'app/',
 			LESS: 'app/less/',
 			IMG: {
-				root: 'app/image/',
-				dist: 'app/image/dist/',
-				src: 'app/image/src/',
+				root: 'app/img/',
+				dist: '<%= app.IMG.root %>dist/',
+				src: '<%= app.IMG.root %>src/',
 			}
 		},
 		prod: {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 				options: {
 					data: function(dest, src) {
 						// Return an object of data to pass to templates
-						return require('<%= app.root %>data.json');
+						return require('./package.json');
 					},
 					pretty: true
 				},
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: '<%= app.IMG.src %>', 
 					src: ['*.{png,jpg}'],
-					dest: '<%= app.IMG.dist %>',
+					dest: '<%= app.IMG.root %>',
 					flatten: true
 				}]
 			}
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			},
 			img: {
 				expand: true,
-				cwd: '<%= app.IMG.dist %>',
+				cwd: '<%= app.IMG.src %>',
 				src: ['*.{png,jpg,svg}'],
 				dest: '<%= prod.IMG %>',
 				flatten: true
@@ -158,7 +158,7 @@ module.exports = function(grunt) {
 				'<%= app.root %>**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'less:dev', 'newer:jade'  ],
+			tasks: [ 'less:dev', 'jade'  ],
 			options: {
 				reload: false,
 				livereload: true,
@@ -172,8 +172,11 @@ module.exports = function(grunt) {
 	// Default
 	grunt.registerTask('default', [ 'connect', 'watch' ]);
 
+	// fresh
+	grunt.registerTask('fresh', [ 'copy', 'jade', 'less:dev', ]);
+
 	// build
-	grunt.registerTask('build', [ 'tinyimg', 'copy:img', 'jade', 'htmlmin', 'less:prod'  ]);
+	grunt.registerTask('build', [ 'copy:img', 'jade', 'htmlmin', 'less:prod'  ]);
 
 	// deploy
 	grunt.registerTask('deply', [ 'build', 'bump:minor', 'build-control' ]);	
