@@ -1,0 +1,13 @@
+mixin menuMaker( navName, stuff, def )
+	ul( role='menu', class='lst ' + navName + '-lst ' + navName + 's' )
+		//- each val, i in stuff
+		//- 	li( role='menuitem', class='itm ' + navName + '-itm ' + navName + '-itm-' + i )
+		//- 		a( class=navName + '-lnk ' + i + '-lnk lnk', href=val )= i
+
+		each val, i in stuff
+			li( role='menuitem', class='itm ' + navName + '-itm ' + navName + '-itm-' + i )
+				case def
+					when 'link'
+						a( class=navName + '-lnk btn-' + i, href= val )= i
+					default
+						a( class=navName + '-lnk lnk', href=val.url )= val.title

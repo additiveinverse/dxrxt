@@ -1,8 +1,13 @@
+// 3rd party libs
 @import 'lesshat-prefixed';
-@import './fa/variables';
+@import 'fa-variables';
 @import '_grid';
 @import '_mixins';
 @import '_variables';
+
+@font-face {
+	.lh-font-face('fontawesome-webfont', '../font/fontawesome-webfont');
+}
 
 .page {
 	background: url('../img/backgrnd-1.jpg') top center no-repeat;
@@ -21,6 +26,14 @@
 
 	&-main {
 	}
+}
+
+.btn {
+	&-soundcloud {}
+	&-youtube {}
+	&-facebook {}
+	&-twitter {}
+	&-email {}
 }
 
 @import 'media';

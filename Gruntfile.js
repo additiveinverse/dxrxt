@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
 	var name    = '<%= pkg.name %>-v<%= pkg.version%>',
 			manifest = { '<%= prod.CSS %>layout.min.css': [  '<%= app.LESS %>normalize.less', '<%= app.LESS %>base-*.less'],
-									 '<%= prod.CSS %>global.css': '<%= app.LESS %>global.less'};
+									 '<%= prod.CSS %>dxrxt.css': '<%= app.LESS %>global.less'};
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 				options: {
 					data: function(dest, src) {
 						// Return an object of data to pass to templates
-						return require('./package.json');
+						return require('./app/data.json');
 					},
 					pretty: true
 				},
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
 				expand: true,
 				cwd: '<%= bower %>',
 				src: ['fontawesome/fonts/fontawesome-webfont.*'  ],
-				dest: 'app/font/',
+				dest: '<%= prod.root %>font/',
 				flatten: true
 			},
 			img: {
@@ -192,7 +192,7 @@ module.exports = function(grunt) {
 				'<%= app.root %>**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'newer:jade', 'less:dev' ],
+			tasks: [ 'jade', 'less:dev' ],
 			options: {
 				reload: false,
 				livereload: true,
