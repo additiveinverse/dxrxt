@@ -79,13 +79,30 @@ module.exports = function(grunt) {
 			dynamic: {
 				files: [{
 					expand: true,
-					cwd: '<%= app.IMG.src %>', 
+					cwd: '<%= app.IMG.src %>',
 					src: ['*.{png,jpg}'],
 					dest: '<%= app.IMG.root %>',
 					flatten: true
 				}]
 			}
-		},		
+		},
+		svgmin: {
+			options: {
+				plugins: [
+					{ removeViewBox: false },
+					{ removeUselessStrokeAndFill: true }
+				]
+			},
+			dist: {
+				files: [{
+					expand: true,
+					cwd: '<%= app.IMG.src %>',
+					src: ['*.svg'],
+					dest: '<%= app.IMG.root %>',
+					flatten: true
+				}]
+			}
+		},
 		copy: {
 			less: {
 				expand: true,
@@ -152,13 +169,13 @@ module.exports = function(grunt) {
 					branch: 'build'
 				}
 			}
-		},		
+		},
 		watch: {
 			files: [
 				'<%= app.root %>**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'less:dev', 'jade'  ],
+			tasks: [ 'less:dev', 'jade', 'copy:img'  ],
 			options: {
 				reload: false,
 				livereload: true,
@@ -179,5 +196,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [ 'copy:img', 'jade', 'htmlmin', 'less:prod'  ]);
 
 	// deploy
-	grunt.registerTask('deply', [ 'build', 'bump:minor', 'build-control' ]);	
+	grunt.registerTask('deply', [ 'build', 'bump:minor', 'build-control' ]);
 };
