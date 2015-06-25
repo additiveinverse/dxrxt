@@ -9,6 +9,10 @@
 	.lh-font-face('fontawesome-webfont', '../font/fontawesome-webfont');
 }
 
+.transitons {
+	.lh-transition(all, 0.25s easeinout);
+}
+
 .page {
 	background: url('../img/backgrnd-1.jpg') top center no-repeat;
 	.lh-background-size(cover);
@@ -17,10 +21,24 @@
 		text-align: right;
 		&-ttl {
 			&-lnk {
+				.lh-transform-origin(50% 50%);
+				.lh-transition(transform, 0.35s, easeinout);
 				display: block;
 				font-size: 0;
-				background: url('../img/dxrxt-logo.svg') center right no-repeat;
+				background: url('../img/dxrxt-logo.svg') top center no-repeat;
 			}
+		}
+	}
+
+	&-social {
+		&-itm {
+			text-align: center;
+
+			.col(1);
+		}
+
+		&-lnk {
+			font-size: 0;
 		}
 	}
 
@@ -29,11 +47,25 @@
 }
 
 .btn {
-	&-soundcloud {}
-	&-youtube {}
-	&-facebook {}
-	&-twitter {}
-	&-email {}
+	&-soundcloud {
+		.icon("pre", @fa-var-soundcloud, 24px );
+	}
+
+	&-youtube {
+		.icon("pre", @fa-var-youtube-play, 24px );
+	}
+
+	&-facebook {
+		.icon("pre", @fa-var-facebook, 24px );
+	}
+
+	&-twitter {
+		.icon("pre", @fa-var-twitter, 24px );
+	}
+
+	&-email {
+		.icon("pre", @fa-var-at, 24px);
+	}
 }
 
 @import 'media';
