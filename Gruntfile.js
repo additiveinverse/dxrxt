@@ -107,8 +107,25 @@ module.exports = function(grunt) {
 			less: {
 				expand: true,
 				cwd: '<%= bower %>',
-				src: ['normalize-less/normalize.less', 'lesshat/build/*.less' ],
+				src: [ 'normalize-less/normalize.less', 'lesshat/build/*.less'],
 				dest: 'app/less/',
+				flatten: true
+			},
+			fa: {
+				expand: true,
+				cwd: '<%= bower %>',
+				src: ['fontawesome/less/variables.less'  ],
+				dest: 'app/less/',
+				flatten: true,
+				rename: function(dest, src) {
+       		return dest + src.replace( src , 'fa-' + src );
+      	}
+			},
+			font: {
+				expand: true,
+				cwd: '<%= bower %>',
+				src: ['fontawesome/fonts/fontawesome-webfont.*'  ],
+				dest: 'app/font/',
 				flatten: true
 			},
 			img: {
@@ -175,7 +192,7 @@ module.exports = function(grunt) {
 				'<%= app.root %>**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'less:dev', 'jade', 'copy:img'  ],
+			tasks: [ 'newer:jade', 'less:dev' ],
 			options: {
 				reload: false,
 				livereload: true,
@@ -190,11 +207,14 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ 'connect', 'watch' ]);
 
 	// fresh
-	grunt.registerTask('fresh', [ 'copy', 'jade', 'less:dev', ]);
+	grunt.registerTask('fresh', [ 'copy', 'jade', 'less:dev' ]);
+
+	// compress
+	grunt.registerTask('compress', [ 'tinyimg', 'svgmin', 'htmlmin', 'less:prod' ]);
 
 	// build
-	grunt.registerTask('build', [ 'copy:img', 'jade', 'htmlmin', 'less:prod'  ]);
+	grunt.registerTask('build', [ 'copy:img', 'jade', 'compress' ]);
 
 	// deploy
-	grunt.registerTask('deply', [ 'build', 'bump:minor', 'build-control' ]);
+	grunt.registerTask('deploy', [ 'build', 'bump:minor', 'build-control:pages',  ]);
 };
