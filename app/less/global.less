@@ -14,11 +14,10 @@
 }
 
 .page {
-	background: url('../img/backgrnd-1.jpg') top center no-repeat;
+	background: rgb(5, 4, 2) url('../img/backgrnd-1.jpg') top center no-repeat;
 	.lh-background-size(cover);
 
 	&-header {
-		text-align: right;
 		&-ttl {
 			&-lnk {
 				.lh-transform-origin(50% 50%);
@@ -31,40 +30,41 @@
 	}
 
 	&-social {
-		&-itm {
-			text-align: center;
-
-			.col(1);
+		&-lst {
+			padding-left: 0;
 		}
-
 		&-lnk {
 			font-size: 0;
 		}
 	}
 
 	&-main {
+		text-shadow: 1px 1px 0 @brown-dark;
+		&-description {
+			margin-top: @base-margin;
+		}
 	}
 }
 
 .btn {
 	&-soundcloud {
-		.icon("pre", @fa-var-soundcloud, 24px );
+		.icon("pre", @fa-var-soundcloud, @base-type-h4 );
 	}
 
 	&-youtube {
-		.icon("pre", @fa-var-youtube-play, 24px );
+		.icon("pre", @fa-var-youtube-play, @base-type-h4 );
 	}
 
 	&-facebook {
-		.icon("pre", @fa-var-facebook, 24px );
+		.icon("pre", @fa-var-facebook, @base-type-h4 );
 	}
 
 	&-twitter {
-		.icon("pre", @fa-var-twitter, 24px );
+		.icon("pre", @fa-var-twitter, @base-type-h4 );
 	}
 
 	&-email {
-		.icon("pre", @fa-var-at, 24px);
+		.icon("pre", @fa-var-at, @base-type-h4 );
 	}
 }
 
