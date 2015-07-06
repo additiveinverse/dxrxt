@@ -16,16 +16,16 @@
 
 //////////////////////////// Helper Class
 .ico_base {
-	color: @font-icon-color;
+	color: @base-icon-color;
 	position: relative;
 	font-style: normal;
 	font-weight: normal;
+	font-family+: @font-icon;
 	speak: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 					font-smoothing: antialiased;
-	font-size: 14px;
-	line-height+: 1;
+	.font-size(@base-icon-size, @base-line-height);
 }
 
 .ico {
@@ -33,26 +33,25 @@
 }
 
 //////////////////////////// Let's go ahead and set the base icon styles
-._ico( @_ico, @font-size: 14, @fnt: @font-icon ) {
-	font-family+: @fnt;
-	.font-size(@font-size);
-	// .ico;
+._ico( @_ico, @font-size: @base-icon-size, @fnt: @font-icon ) {
 	._inject( @_ico );
 }
 
 //////////////////////////// Let's make some icons
 // 	Here's where the magic happens
-.icon( @place, @_ico, @fs: 14, @fnt: @font-icon ) when ( @place = "pre" ) {
+.icon( @place, @_ico, @fs: @base-icon-size, @fnt: @font-icon ) when ( @place = "pre" ) {
 	&:before {
 		margin-right: @base-margin-eighth;
 		._ico( @_ico, @fs, @fnt );
+		&:extend(.ico_base);
 	}
 }
 
-.icon( @place, @_ico, @fs: 14, @fnt: @font-icon ) when ( @place = "app" ) {
+.icon( @place, @_ico, @fs: @base-icon-size, @fnt: @font-icon ) when ( @place = "app" ) {
 	&:after {
 		margin-left: @base-margin-eighth;
 		._ico( @_ico, @fs, @fnt );
+		&:extend(.ico_base);
 	}
 }
 

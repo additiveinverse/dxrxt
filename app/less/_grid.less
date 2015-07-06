@@ -1,20 +1,19 @@
-/////////////////
-// Semantic.gs // for LESS: http://lesscss.org/
-/////////////////
-
 // Defaults which you can freely override
 @column-width: 60;
 @gutter-width: 20;
 @columns: 12;
 
-// Utility variable — you should never need to modify this
+// Utility variable — you should never need to modify these
 @gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px;
+@gridsystem-loop: 	false;
+@gridsystem-margin: true;
 
 // Set @total-width to 100% for a fluid layout
-@total-width: 100%;
+@total-width: 	100%;
+
 
 // Creates a wrapper for a series of columns
-.make-row(@gutter-width: @gutter-width) {
+.make-row(@gutter-width: @gutter-width) when (@gridsystem-margin = true) {
   margin-left:  (@gutter-width / -2) * 0.1%;
   margin-right: (@gutter-width / -2) * 0.1%;
 }
@@ -38,15 +37,15 @@
 	@gutters: @total-width * ((@gutter-width * .5) / @gridsystem-width) * 2;
 	width: @total-width * ((@gutter-width + @gridsystem-width) / @gridsystem-width) - @gutters;
 	margin: 0 auto;
-	// .clearfix;
+	.clearfix;
 }
 
-.inline-block-defaults() {
+.inline-block-defaults(@valign: top) {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: @valign;
 }
 
-.grid-margin(@columns: @columns, @margin-top: auto ) {
+.grid-margin(@columns: @columns, @margin-top: auto ) when (gridsystem-margin = true) {
 	margin+: @margin-top @total-width * ((@gutter-width * .5) / @gridsystem-width) @margin-top;
 }
 
@@ -61,14 +60,6 @@
 	.grid-margin(@columns, @margin-top);
 }
 
-.push( @offset: 1 ) {
-	left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
-}
-
-.pull( @offset: 1 ) {
-	left: -@total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
-}
-
 .prefix( @offset: 1 ) {
 	padding-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
 }
@@ -77,10 +68,35 @@
 	padding-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
 }
 
-.grid-loop (@i) when (@i > 0) {
+.push(@pos: relative) {
+	position: @pos;
+}
+
+.push-left( @offset: 1 ) {
+	&:extend(.push);
+	left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.push-right( @offset: 1 ) {
+	&:extend(.push);
+	right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.push-down( @offset: 1 ) {
+	&:extend(.push);
+	top: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.push-up( @offset: 1 ) {
+	&:extend(.push);
+	bottom: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+
+.grid-loop (@i) when (@i > 0) and (@gridsystem-loop = true) {
 	.g@{i} {
 		.column(@i);
 	}
 	.grid-loop(@i - 1);
 }
-// .grid-loop(@columns);
+.grid-loop(@columns);

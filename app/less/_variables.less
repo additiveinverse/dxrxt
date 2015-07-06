@@ -8,10 +8,9 @@
 @white: 										rgb( 255, 255, 255 );
 
 // //////////////////////// Branding
-@white-off: 								rgb( 240, 243, 243 );
 @rust:											rgb( 155, 96, 32 );
-@red:												red;
-@red-dark:									rgb(93, 34, 6);
+@red:												rgb(186,12,23);
+@red-dark:									rgb( 93, 34, 6 );
 @orange: 										rgb(201, 108, 31);
 @tan:												rgb( 221, 198, 148 );
 @brown-dark:								rgb(44, 28, 6);
@@ -22,8 +21,10 @@
 @font-script: 							cursive;
 
 // ------------------------ icons
-@font-icon-color: 					@tan;
 @font-icon:									'fontawesome-webfont';
+
+@base-icon-color: 					@orange;
+@base-icon-size: 						@base-type-h4;
 
 // //////////////////////// VISUAL DEFAULTS
 // ------------------------ Typography
@@ -52,7 +53,8 @@
 
 
 // ------------------------ Typography - spacing
-@base-margin:								unit( @base-line-height, em);
+@base-margin:								unit( @base-line-height, %) * 3;
+// @base-margin:								unit( @base-line-height, em);
 @base-margin-half:					@base-margin / 2;
 @base-margin-quarter:				@base-margin / 4;
 @base-margin-eighth:				@base-margin / 8;
@@ -64,7 +66,16 @@
 
 // ------------------------ Forms - buttons
 @btn-primary: 							@orange;
+@btn-primary-text:					@white;
+@btn-primary-hover:					@orange;
+@btn-primary-hover-text:		@white;
+
 @btn-secondary:	 						@rust;
+@btn-secondary-text:				@white;
+@btn-secondary-hover:				@rust;
+@btn-secondary-hover-text:	@white;
+
+@btn-pad:										@base-margin @base-margin-half;
 
 // ------------------------ Forms - labels
 @label-width: 							30%;
@@ -84,9 +95,6 @@
 @legend-color:							@grey-dark;
 @legend-border-color:				#e5e5e5;
 
-@btn-type-color:						@white;
-@btn-pad:										@base-margin @base-margin-half;
-@btn-bg:										@btn-primary;
 
 @border-color: 							@grey;
 @border-radius: 						100%;

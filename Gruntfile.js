@@ -11,14 +11,19 @@ module.exports = function(grunt) {
 			LESS: 'app/less/',
 			IMG: {
 				root: 'app/img/',
-				dist: '<%= app.IMG.root %>dist/',
-				src: '<%= app.IMG.root %>src/',
+				dist: 'app/img/dist/',
+				src: 'app/img/src/',
 			}
 		},
 		prod: {
 			root: 'gh-pages/',
 			IMG: 'gh-pages/img/',
 			CSS: 'gh-pages/css/'
+		},
+		build: {
+			root: 'build/',
+			IMG: 'build/img/',
+			CSS: 'build/css/'
 		},
 		bower: 'bower_components/',
 		jshint: {
@@ -189,7 +194,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			files: [
-				'<%= app.root %>**/*',
+				'app/**/*',
 				'Gruntfile.js'
 			],
 			tasks: [ 'jade', 'less:dev' ],
