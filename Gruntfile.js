@@ -164,10 +164,10 @@ module.exports = function(grunt) {
 				commitMessage: 'Release v%VERSION%',
 				commitFiles: ['package.json', 'bower.json'],
 				createTag: true,
-				tagName: '%VERSION%abv',
-				tagMessage: '%VERSION%abv',
+				tagName: '%VERSION%',
+				tagMessage: '%VERSION%',
 				push: true,
-				pushTo: 'upstream',
+				pushTo: 'origin',
 				gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
 				globalReplace: false
 			}
