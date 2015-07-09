@@ -36,6 +36,7 @@
     "grunt-jsonlint": "^1.0.4",
     "grunt-marked": "^0.1.1",
     "grunt-newer": "^1.1.1",
+    "grunt-sftp-deploy": "^0.2.4",
     "grunt-svgmin": "^2.0.1",
     "grunt-tinyimg": "0.0.5",
     "marked": "^0.3.3",

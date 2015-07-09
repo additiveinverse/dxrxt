@@ -174,7 +174,7 @@ module.exports = function(grunt) {
 		},
 		buildcontrol: {
 			options: {
-				dir: 'build/',
+				dir: 'gh-pages/',
 				commit: true,
 				push: true,
 				message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
@@ -190,6 +190,21 @@ module.exports = function(grunt) {
 					remote: '../',
 					branch: 'build'
 				}
+			}
+		},
+		'sftp-deploy': {
+			build: {
+				auth: {
+					host: 'dxrxt.com',
+					port: 22,
+					authKey: 'key1'
+				},
+				cache: 'sftpCache.json',
+				src: 'gh-pages/',
+				dest: '/home/proemadmin/dxrxt.com',
+				serverSep: '/',
+				concurrency: 4,
+				progress: true
 			}
 		},
 		watch: {
