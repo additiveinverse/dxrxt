@@ -1,6 +1,6 @@
 {
 	"name": "dxrxt",
-	"description": "After years of congratulating each other’s film and music taste, curiosity got the better of Richard Bailey (Proem), Don Gunn (Bleen), and Tanner Volz (Anklebiter). They threw each other some remix kits and yelled ideas across social media platforms. dx.rxt was born. The work is cinematic, idiosyncratic, a little brutal, a little beautiful. Proem’s dark rhythmic washes, anklebiter’s wistful melodics, Bleen’s percussive mayhem, the best of every project in uncomfortable harmony. Something something blahblah... writing about music.... the dumbs. Also... farting chicken",
+	"description": "After years of congratulating the other’s like minded taste in film and music.... Curiosity got the better of Richard Bailey (Proem), Don Gunn (Bleen), and Tanner Volz (Anklebiter). They jokingly started a 'power ambient' band over where Rich would mangle the fretless bass, Tanner would arppegiate the ivories and Don would beat the shit out of stuff with sticks. It became quite serious quite quickly when they started piling things into a shared folder filled with remix kits and sound snippets. Much to the chagrin of their followers (sorry folks), they yelled song ideas across social media and got to work... DxRxT was born. The work is cinematic, idiosyncratic, a little brutal, a little beautiful. Proem’s dark rhythmic washes, anklebiter’s melodic film score sensibilities, Bleen’s percussive mayhem, the best of every project blended in (un?)comfortable harmony. Something something blahblahblah... writing about music.... the dumbs. Also... farting chicken",
 	"social": {
 		"soundcloud": "https://soundcloud.com/dx_rxt",
 		"youtube": "http://www.twitter.com/wallofknives",
@@ -8,9 +8,23 @@
 		"facebook": "https://www.facebook.com/dx.rxt",
 		"email": "mailto:txrxd@dxrxt.com"
 	},
-	"content": {
-		"article": "additional content stuffs here"
-	},
+	"peeps": [
+		{
+			"name": "Tanner Volz",
+			"image": "",
+			"bio": "When Tanner is not wearing his velvet smoking jacket and fawning over his all vinyl sci-fi/horror film score collection (10+ hipster points), he can be found at Beethoven in the park concerts, eating dinner at 4pm, and guzzling craft beer while wishing he could get back on his bike. We coerced him into writing music again so he'd have something to do while bed ridden and doped up. There's nothing worse than an aging hipster who's hip is basically older than he his. It's with little irony that his musical project is named anklebiter. He puts the Arp in AARP"
+		},
+		{
+			"name": "Don Gunn",
+			"image": "",
+			"bio": "Don can usually be found chained to a mixing console 12-15 hours at a time for his day job as a freelance proTools jockey. He's worked with a TON of people you've heard of ( We're pretty sure he KNOWS everyone in the music business). Somehow between having lunch with Robert Fripp and hanging with Death Cab, Dong (as he's commonly referred to) magically finds time to make music with us. But basically, he just name drops the WHOLE time... it's super annoying and a small trade-off for his amazing drum skills."
+		},
+		{
+			"name": "Richard Bailey",
+			"image": "",
+			"bio": "Most people probably know Rich from his work as proem. However, we know him as 'the guy who can't just leave ANYTHING alone'. Our bro here has to micro edit every damned sound in every project. If he did meth he'd redfine what it means to be a tweaker. He writes code for some tech company, makes art, and likes to complicate things."
+		}
+	],
 	"api_endpoints": {
 		"soundcloud": "api.soundcloud.com/users/154985705",
 		"youtube": "",

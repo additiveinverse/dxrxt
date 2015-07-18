@@ -3,6 +3,7 @@
 @import 'fa-variables';
 @import '_grid';
 @import '_mixins';
+@import '_utilities';
 @import '_variables';
 
 @font-face {
@@ -18,15 +19,14 @@
 	.lh-background-size(cover);
 
 	&-header {
-
 		&-ttl {
 			font-size: 0;
 			&-lnk {
-				.lh-transform-origin(50% 50%);
-				.lh-transition(transform, 0.35s, easeinout);
 				display: block;
-
 				background: url('../img/dxrxt-logo.svg') no-repeat;
+
+				.lh-transform-origin(0, 0 );
+				.lh-transition(transform, 0.35s, easeinout);
 			}
 		}
 	}
@@ -45,10 +45,24 @@
 	&-main {
 		text-shadow: 1px 1px 0 @brown-dark;
 		&-description {
-			margin-top: @base-margin;
+			margin-top: @base-margin-half;
 			&:extend(.transitons);
 		}
+
+		&-peep {
+			font-size: 0;
+		}
 	}
+
+}
+
+.peep {
+	&-bio {
+		padding: @base-margin-half @base-margin 0 0;
+	}
+
+	&-image {}
+	&-name {}
 }
 
 .btn {

@@ -76,6 +76,8 @@
 // 768px
 @media only screen and ( min-width: 768px ) {
 	.page {
+		padding: 0 0 @base-margin 0;
+
 		&-header {
 			padding: 0 @base-margin;
 			text-align: right;
@@ -121,7 +123,10 @@
 // 980px
 @media only screen and ( min-width: 992px ) {
 	.page {
+
 		&-header {
+			.col(3);
+
 			&-ttl {
 				&-lnk {
 				}
@@ -130,7 +135,12 @@
 		}
 
 		&-main {
+			.suffix(3);
 		}
+	}
+
+	.peep {
+		.column(4);
 	}
 }
 
