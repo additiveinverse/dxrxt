@@ -188,7 +188,7 @@ module.exports = function(grunt) {
 			local: {
 				options: {
 					remote: 'git@github.com:additiveinverse/dxrxt.git',
-					branch: 'build'
+					branch: 'master'
 				}
 			}
 		},
@@ -236,5 +236,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('compress', [ 'tinyimg', 'svgmin', 'htmlmin' ]);
 
 	// deploy
-	grunt.registerTask('deploy', [ 'build', 'compress', 'bump:minor', 'buildcontrol:pages',  ]);
+	grunt.registerTask('deploy', [ 'build', 'compress', 'bump:minor', 'buildcontrol:local', 'sftp-deploy' ]);
 };
