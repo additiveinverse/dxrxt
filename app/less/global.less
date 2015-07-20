@@ -7,7 +7,7 @@
 @import '_variables';
 
 @font-face {
-	.lh-font-face('fontawesome-webfont', '../font/fontawesome-webfont');
+	.lh-font-face(@font-icon, '../font/fontawesome-webfont');
 }
 
 .transitons {
@@ -49,19 +49,24 @@
 			&:extend(.transitons);
 		}
 
-		&-peep {
+		&-whodat {
 			font-size: 0;
 		}
 	}
 
 }
 
-.peep {
+.whodat {
 	&-bio {
 		padding: @base-margin-half @base-margin 0 0;
 	}
 
-	&-image {}
+	&-image {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 	&-name {}
 }
 

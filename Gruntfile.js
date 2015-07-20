@@ -212,7 +212,7 @@ module.exports = function(grunt) {
 				'app/**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'jade', 'less:dev' ],
+			tasks: [ 'jade', 'less:dev', 'newer:tinyimg', 'newer:copy:img' ],
 			options: {
 				reload: false,
 				livereload: true,
