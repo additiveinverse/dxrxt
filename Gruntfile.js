@@ -187,7 +187,7 @@ module.exports = function(grunt) {
 			},
 			local: {
 				options: {
-					remote: '../',
+					remote: 'git@github.com:additiveinverse/dxrxt.git',
 					branch: 'build'
 				}
 			}
@@ -201,7 +201,7 @@ module.exports = function(grunt) {
 				},
 				cache: 'sftpCache.json',
 				src: 'gh-pages/',
-				dest: '/home/proemadmin/dxrxt.com',
+				dest: '/home/dxrxt/dxrxt.com',
 				serverSep: '/',
 				concurrency: 4,
 				progress: true

@@ -28,4 +28,5 @@ node_modules
 bower_components
 gh-pages
 .ftppass
+sftpCache.json
 *.sublime-workspace
