@@ -80,15 +80,18 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		tinyimg: {
+		imagemin: {
 			dynamic: {
 				files: [{
 					expand: true,
-					cwd: '<%= app.IMG.src %>',
+					cwd: '<%= app.IMG.root %>',
 					src: ['*.{png,jpg}'],
 					dest: '<%= app.IMG.root %>',
 					flatten: true
-				}]
+				}],
+				options: {
+					optimizationLevel: 4
+				}
 			}
 		},
 		svgmin: {
@@ -135,7 +138,7 @@ module.exports = function(grunt) {
 			},
 			img: {
 				expand: true,
-				cwd: '<%= app.IMG.src %>',
+				cwd: '<%= app.IMG.root %>',
 				src: ['*.{png,jpg,svg}'],
 				dest: '<%= prod.IMG %>',
 				flatten: true
@@ -206,7 +209,7 @@ module.exports = function(grunt) {
 				'app/**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'jade', 'less:dev', 'newer:tinyimg', 'newer:copy:img' ],
+			tasks: [ 'jade', 'less:dev', 'newer:imagemin', 'newer:copy:img' ],
 			options: {
 				reload: false,
 				livereload: true,
@@ -227,7 +230,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [ 'copy:img', 'jade', 'less:prod' ]);
 
 	// compress
-	grunt.registerTask('compress', [ 'tinyimg', 'svgmin', 'htmlmin' ]);
+	grunt.registerTask('compress', [ 'imagemin', 'svgmin', 'htmlmin' ]);
 
 	// deploy
 	grunt.registerTask('deploy', [ 'build', 'compress', 'bump:minor', 'sftp-deploy' ]);
