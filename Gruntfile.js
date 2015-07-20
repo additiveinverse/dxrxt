@@ -229,11 +229,11 @@ module.exports = function(grunt) {
 	// fresh
 	grunt.registerTask('fresh', [ 'copy', 'jade', 'less:dev' ]);
 
-	// compress
-	grunt.registerTask('compress', [ 'tinyimg', 'svgmin', 'htmlmin' ]);
-
 	// build
 	grunt.registerTask('build', [ 'copy:img', 'jade', 'less:prod' ]);
+
+	// compress
+	grunt.registerTask('compress', [ 'tinyimg', 'svgmin', 'htmlmin' ]);
 
 	// deploy
 	grunt.registerTask('deploy', [ 'build', 'compress', 'bump:minor', 'buildcontrol:pages',  ]);

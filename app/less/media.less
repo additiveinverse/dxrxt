@@ -61,7 +61,7 @@
 	.page {
 		&-header {
 			&-ttl {
-				.col(7);
+				.col(9);
 			}
 		}
 
@@ -87,12 +87,12 @@
 
 			&-ttl {
 				&-lnk {
-					// float: left;
 					top: 120px;
 					position: relative;
 					.rotate(-70deg);
 					min-width: 400px;
 					min-height: 200px;
+					// float: left;
 				}
 			}
 		}
@@ -100,7 +100,7 @@
 		&-social {
 			&-lst {
 				position: relative;
-				top: 400px;
+				top: 100px;
 			}
 			&-itm {
 				display: block;
@@ -110,8 +110,8 @@
 		}
 
 		&-main {
-			margin: @base-margin-half @base-margin;
-			padding-top: @base-margin * 4;
+			margin: @base-margin-quarter 0 0 @base-margin-half;
+			padding-top: @base-margin * 3;
 			.suffix(4);
 			&-description {
 				.font-size(@base-type-size, 1);

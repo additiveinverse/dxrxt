@@ -27,5 +27,5 @@ build/Release
 node_modules
 bower_components
 gh-pages
-.ftpass
+.ftppass
 *.sublime-workspace
