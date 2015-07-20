@@ -1,6 +1,6 @@
 {
   "name": "dxrxt",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "single page site for dxrxt",
   "main": "index.html",
   "repository": {
@@ -39,7 +39,6 @@
     "grunt-sftp-deploy": "^0.2.4",
     "grunt-svgmin": "^2.0.1",
     "grunt-tinyimg": "0.0.5",
-    "marked": "^0.3.3",
     "matchdep": "^0.3.0"
   }
 }
