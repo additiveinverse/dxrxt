@@ -20,6 +20,7 @@
 		&-social {
 			&-lst {
 				text-align: right;
+				.inline-block-defaults;
 			}
 			&-itm {
 				.inline-block-defaults;
@@ -40,15 +41,15 @@
 
 		&-header {
 			&-ttl {
-				.column(7);
+				.column(8);
 			}
 		}
 
 		&-social {
 			&-lst {
+				.col(4);
+				margin-top: 0;
 				text-align: right;
-				.column(4.5);
-				float: right;
 				padding-left: 0;
 			}
 		}
@@ -103,12 +104,13 @@
 // 980px
 @media only screen and ( min-width: 992px ) {
 	.page {
+		padding: 0 0 4.5% 2.5%;
+
 		&-header {
 			padding: 0;
 			text-align: right;
 			position: absolute;
 			right: 0;
-			.col(4);
 
 			&-ttl {
 				&-lnk {
@@ -123,15 +125,11 @@
 
 		&-social {
 			&-lst {
-				float: none;
 				position: relative;
-				top: 100px;
 			}
 
 			&-itm {
 				display: block;
-				line-height: 2.5;
-				text-align: center;
 			}
 		}
 
@@ -179,13 +177,16 @@
 
 		&-social {
 			&-lst {
-				top: 150px;
+				.col(4);
+				top: 115px;
+				right: 115px;
+				.lh-rotate( 20deg )
 			}
 
 			&-itm {
 				display: block;
-				line-height: 2.5;
-				text-align: center;
+				text-align: left;
+				font-size: 16px;
 			}
 		}
 	}

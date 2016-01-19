@@ -22,10 +22,13 @@
 	font-weight: normal;
 	font-family+: @font-icon;
 	speak: none;
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 40px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 					font-smoothing: antialiased;
-	.font-size(@base-icon-size, @base-line-height);
+	.font-size(@base-icon-size, 2 );
 }
 
 .ico {
@@ -41,7 +44,7 @@
 // 	Here's where the magic happens
 .icon( @place, @_ico, @fs: @base-icon-size, @fnt: @font-icon ) when ( @place = "pre" ) {
 	&:before {
-		margin-right: @base-margin-eighth;
+		margin-right: 10px;
 		._ico( @_ico, @fs, @fnt );
 		&:extend(.ico_base);
 	}
@@ -49,7 +52,7 @@
 
 .icon( @place, @_ico, @fs: @base-icon-size, @fnt: @font-icon ) when ( @place = "app" ) {
 	&:after {
-		margin-left: @base-margin-eighth;
+		margin-left: @base-margin-half;
 		._ico( @_ico, @fs, @fnt );
 		&:extend(.ico_base);
 	}
