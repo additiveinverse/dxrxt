@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 				src: [ '<%= app.root %>*.json' ]
 			}
 		},
-		jade: {
+		pug: {
 			dev: {
 				options: {
 					data: function(dest, src) {
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 					pretty: true
 				},
 				files: {
-					"<%= prod.root %>index.html": "<%= app.root %>index.jade"
+					"<%= prod.root %>index.html": "<%= app.root %>index.pug"
 				}
 			}
 		},
@@ -209,7 +209,7 @@ module.exports = function(grunt) {
 				'app/**/*',
 				'Gruntfile.js'
 			],
-			tasks: [ 'jade', 'less:dev', 'newer:imagemin', 'newer:copy:img' ],
+			tasks: [ 'pug', 'less:dev', 'newer:imagemin', 'newer:copy:img' ],
 			options: {
 				reload: false,
 				livereload: true,
@@ -224,10 +224,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ 'connect', 'watch' ]);
 
 	// fresh
-	grunt.registerTask('fresh', [ 'copy', 'jade', 'less:dev' ]);
+	grunt.registerTask('fresh', [ 'copy', 'pug', 'less:dev' ]);
 
 	// build
-	grunt.registerTask('build', [ 'copy:img', 'jade', 'less:prod' ]);
+	grunt.registerTask('build', [ 'copy:img', 'pug', 'less:prod' ]);
 
 	// compress
 	grunt.registerTask('compress', [ 'imagemin', 'svgmin', 'htmlmin' ]);

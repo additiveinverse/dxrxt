@@ -5,7 +5,7 @@ mixin menuMaker( navName, stuff, def )
 		//- 		a( class=navName + '-lnk ' + i + '-lnk lnk', href=val )= i
 
 		each val, i in stuff
-			li( role='menuitem', class='itm ' + navName + '-itm ' + navName + '-itm-' + i )
+			li( role='menuitem', class='itm ' + navName + '-lst-itm ' + navName + '-itm-' + i )
 				case def
 					when 'link'
 						a( class=navName + '-lnk btn-' + i, href= val )= i

@@ -27,12 +27,19 @@ html( lang='en' )
 			+menuMaker( 'page-social', social, 'link' )
 
 		main.page-main
-			iframe(width="100%", height="340", scrolling="no", frameborder="no", src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/154985705&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true")
-			p.page-main-description= description
+
+			.page-main-
+				.page-main--ep
+					iframe( width="300px", height="420px", scrolling="no", frameborder="no", src="https://bandcamp.com/EmbeddedPlayer/album=562850161/size=large/bgcol=333333/linkcol=e99708/transparent=true/", seamless)
+					//- a( href="http://deadworlds.bandcamp.com/album/zero-point-five-ep") 
+					//- 	Zero Point Five ep by Dead Worlds
+
+				p.page-main-description= description
 
 			section.page-main-whodat
 				each val in who
 					.whodat
 						img.whodat-image(src=val.image )
-						h2.whodat-title= val.name
-						p.whodat-bio= val.bio
+						.whodat-person
+							h2.whodat-person-name= val.name
+							p.whodat-person-bio= val.bio

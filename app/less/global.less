@@ -1,7 +1,7 @@
 // 3rd party libs
 @import 'lesshat-prefixed';
 @import 'fa-variables';
-@import '_grid';
+// @import '_grid';
 @import '_mixins';
 @import '_utilities';
 @import '_variables';
@@ -20,48 +20,138 @@
 
 	&-header {
 		&-ttl {
-			font-size: 0;
 			&-lnk {
+				@media screen and (min-width: 0 ) {
+					padding: @base-margin-eighth @base-margin-quarter;
+				}
+
+				@media screen and (min-width: 768px) {
+					padding: @base-margin-half @base-margin;
+				}
+	
 				display: block;
 				background: url('../img/dxrxt-logo.svg') no-repeat;
 
-				.lh-transform-origin(0, 0 );
-				.lh-transition(transform, 0.35s, easeinout);
+				// .lh-transform-origin(0, 0 );
+				// .lh-transition(transform, 0.35s, easeinout);
+			}
+		}
+	}
+
+	&-social {
+		&-lst {
+			margin: 0;
+			display: flex;
+
+			@media screen and (min-width: 0 ) {
+				padding: 0 @base-margin-quarter 0;
+				justify-content: space-between;
+				font-size: 0;
+			}
+			@media screen and (min-width: 640px) {
+				font-size: 14px;
+			}			
+			@media screen and (min-width: 768px) {
+				padding: 0 @base-margin 0;
+				justify-content: flex-start;
+				&-itm {
+					margin-right: @base-margin;
+				}
 			}
 		}
 	}
 
 	&-main {
+
 		text-shadow: 1px 1px 0 @brown-dark;
-		&-description {
-			margin-top: @base-margin-half;
-			&:extend(.transitons);
+		&--ep {
+			text-align: center;
+		}
+
+		&- {
+			border-bottom: 10px solid rgb(93, 34, 6);
+			display: flex;
+		
+			@media screen and ( min-width: 0 ) {
+				padding: @base-margin-quarter @base-margin-half;
+				flex-direction: column;
+				justify-content: center;
+				&description {
+					padding-top: @base-margin-quarter;
+				}
+			}
+			@media screen and ( min-width: 768px ) {
+				padding: @base-margin-half @base-margin;
+				flex-direction: row;
+				justify-content: flex-start;
+				&description {
+					padding-top: 0;
+					padding-left: @base-margin-half;
+				}
+			}
 		}
 
 		&-whodat {
-			font-size: 0;
+			display: flex;
+			background-color: black;
+			@media screen and ( min-width: 0 ) {
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			@media screen and (min-width: 768px) {
+				padding: @base-margin-half @base-margin;
+				flex-direction: row;				
+				flex-wrap: wrap;
+			}
 		}
 	}
-
 }
 
 .whodat {
-	&-bio {
-		padding: @base-margin-half @base-margin 0 0;
+	display: flex;
+	
+	@media screen and (min-width: 0) {
+		flex-direction: column;
+		padding: @base-margin-half;
 	}
+		
+	@media screen and (min-width: 640px) {
+		padding: 0;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1280px) {
+		flex-direction: column;
+		width: calc( ~"100% / 3 - 1.5rem" );
+		min-width: 300px;
+	}
+
+	// @media screen and (min-width: 1024px) {
+	// 	// flex-direction: column;
+	// 	// width: calc( ~"100% / 3" );
+	// 	&:nth-child( 2 ) {
+	// 		padding: 0 10px;
+	// 	}
+	// }
 
 	&-image {
-		width: 90%;
-		margin: 0 auto;
+		overflow: hidden;
+		border-radius: 100%;
+		width: 25%;
+		min-width: 200px;
+		height: auto;
+		align-self: flex-start;
+		display: block;
+		margin: 10px auto;
 		text-align: center;
 	}
-
-	&-name {}
 }
 
 .btn {
 	&-soundcloud {
-		.icon("pre", @fa-var-soundcloud );
+		.icon("pre", @fa-var-soundcloud, @font-icon );
 	}
 
 	&-youtube {
@@ -81,4 +171,4 @@
 	}
 }
 
-@import 'media';
+// @import 'media';
