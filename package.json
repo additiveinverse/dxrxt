@@ -1,6 +1,6 @@
 {
   "name": "dxrxt",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "single page site for dxrxt",
   "main": "index.html",
   "repository": {
@@ -23,22 +23,23 @@
     "url": "https://github.com/additiveinverse/dxrxt/issues"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-build-control": "^0.5.0",
-    "grunt-bump": "^0.3.1",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-connect": "^0.10.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-contrib-imagemin": "^0.9.4",
-    "grunt-contrib-jade": "^0.14.1",
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-jsonlint": "^1.0.4",
-    "grunt-newer": "^1.1.1",
-    "grunt-sftp-deploy": "^0.2.4",
-    "grunt-svgmin": "^2.0.1",
-    "grunt-tinyimg": "0.0.5",
-    "matchdep": "^0.3.0"
-  }
+    "grunt": "*",
+    "grunt-build-control": "*",
+    "grunt-bump": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-pug": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-jsonlint": "*",
+    "grunt-newer": "*",
+    "grunt-sftp-deploy": "*",
+    "grunt-svgmin": "*",
+    "grunt-tinyimg": "*",
+    "matchdep": "*"
+  },
+  "dependencies": {}
 }
